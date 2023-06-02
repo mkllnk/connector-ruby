@@ -31,5 +31,23 @@ module DataFoodConsortium
 		require 'datafoodconsortium/connector/defined_product.rb'
 		require 'datafoodconsortium/connector/supplied_product.rb'
 		require 'datafoodconsortium/connector/skos_concept.rb'
+
+          CLASSES = {
+            Price::SEMANTIC_TYPE => Price,
+            CatalogItem::SEMANTIC_TYPE => CatalogItem,
+            Offer::SEMANTIC_TYPE => Offer,
+            Agent::SEMANTIC_TYPE => Agent,
+            CustomerCategory::SEMANTIC_TYPE => CustomerCategory,
+            Enterprise::SEMANTIC_TYPE => Enterprise,
+            Person::SEMANTIC_TYPE => Person,
+            DefinedProduct::SEMANTIC_TYPE => DefinedProduct,
+            SuppliedProduct::SEMANTIC_TYPE => SuppliedProduct,
+            NutrientCharacteristic::SEMANTIC_TYPE => NutrientCharacteristic,
+            AllergenCharacteristic::SEMANTIC_TYPE => AllergenCharacteristic,
+            QuantitativeValue::SEMANTIC_TYPE => QuantitativeValue,
+            PhysicalCharacteristic::SEMANTIC_TYPE => PhysicalCharacteristic,
+            Address::SEMANTIC_TYPE => Address,
+            SKOSConcept::SEMANTIC_TYPE => SKOSConcept,
+          }.freeze
 	end
 end
