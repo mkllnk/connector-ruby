@@ -21,14 +21,13 @@
 # SOFTWARE.
 
 
+
+
 require "datafoodconsortium/connector/characteristic"
-
-
 require "virtual_assembly/semantizer"
 
 class DataFoodConsortium::Connector::AllergenCharacteristic < DataFoodConsortium::Connector::Characteristic
-
-	
+    SEMANTIC_TYPE = "http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#AllergenCharacteristic".freeze
 
 	# @return [IAllergenDimension]
 	attr_accessor :allergenDimension

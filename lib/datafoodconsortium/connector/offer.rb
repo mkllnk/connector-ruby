@@ -26,8 +26,8 @@
 require "virtual_assembly/semantizer"
 
 class DataFoodConsortium::Connector::Offer
-
-	include VirtualAssembly::Semantizer::SemanticObject
+    include VirtualAssembly::Semantizer::SemanticObject
+    SEMANTIC_TYPE = "http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#Offer".freeze
 
 	# @return [IPrice]
 	attr_accessor :price

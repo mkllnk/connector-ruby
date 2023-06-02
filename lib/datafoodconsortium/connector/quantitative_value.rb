@@ -25,8 +25,8 @@
 require "virtual_assembly/semantizer"
 
 class DataFoodConsortium::Connector::QuantitativeValue
-
-	include VirtualAssembly::Semantizer::SemanticObject
+    include VirtualAssembly::Semantizer::SemanticObject
+    SEMANTIC_TYPE = "http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#QuantitativeValue".freeze
 
 	# @return [IUnit]
 	attr_accessor :unit

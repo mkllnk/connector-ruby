@@ -20,18 +20,17 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 
-require "datafoodconsortium/connector/supplied_product"
-
-
-
 require "datafoodconsortium/connector/agent"
+
+
+
+require "datafoodconsortium/connector/supplied_product"
 
 
 require "virtual_assembly/semantizer"
 
 class DataFoodConsortium::Connector::Enterprise < DataFoodConsortium::Connector::Agent
-
-	
+    SEMANTIC_TYPE = "http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#Enterprise".freeze
 
 	# @return [String]
 	attr_accessor :name
@@ -78,6 +77,15 @@ class DataFoodConsortium::Connector::Enterprise < DataFoodConsortium::Connector:
 	end
 	
 
+	
+	def addCustomerCategory(customerCategory)
+		self.customerCategories.push(customerCategory)
+	end
+	
+	
+	
+	
+	
 	
 	def addCustomerCategory(customerCategory)
 		self.customerCategories.push(customerCategory)

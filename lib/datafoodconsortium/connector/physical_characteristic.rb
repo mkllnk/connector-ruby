@@ -20,15 +20,14 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 
-require "datafoodconsortium/connector/characteristic"
 
+require "datafoodconsortium/connector/characteristic"
 
 
 require "virtual_assembly/semantizer"
 
 class DataFoodConsortium::Connector::PhysicalCharacteristic < DataFoodConsortium::Connector::Characteristic
-
-	
+    SEMANTIC_TYPE = "http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#PhysicalCharacteristic".freeze
 
 	# @return [IPhysicalDimension]
 	attr_accessor :physicalDimension

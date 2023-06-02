@@ -22,13 +22,12 @@
 
 
 
-require "datafoodconsortium/connector/characteristic"
 
+require "datafoodconsortium/connector/characteristic"
 require "virtual_assembly/semantizer"
 
 class DataFoodConsortium::Connector::NutrientCharacteristic < DataFoodConsortium::Connector::Characteristic
-
-	
+    SEMANTIC_TYPE = "http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#NutrientCharacteristic".freeze
 
 	# @return [INutrientDimension]
 	attr_accessor :nutrientDimension

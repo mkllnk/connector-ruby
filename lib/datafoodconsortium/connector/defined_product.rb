@@ -35,8 +35,8 @@
 require "virtual_assembly/semantizer"
 
 class DataFoodConsortium::Connector::DefinedProduct
-
-	include VirtualAssembly::Semantizer::SemanticObject
+    include VirtualAssembly::Semantizer::SemanticObject
+    SEMANTIC_TYPE = "http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#DefinedProduct".freeze
 
 	# @return [String]
 	attr_accessor :name

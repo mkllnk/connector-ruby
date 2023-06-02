@@ -26,8 +26,8 @@
 require "virtual_assembly/semantizer"
 
 class DataFoodConsortium::Connector::Agent
-
-	include VirtualAssembly::Semantizer::SemanticObject
+    include VirtualAssembly::Semantizer::SemanticObject
+    SEMANTIC_TYPE = "http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#Agent".freeze
 
 	# @return [Contactable]
 	attr_accessor :contacts

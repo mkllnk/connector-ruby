@@ -24,8 +24,8 @@
 require "virtual_assembly/semantizer"
 
 class DataFoodConsortium::Connector::Address
-
-	include VirtualAssembly::Semantizer::SemanticObject
+    include VirtualAssembly::Semantizer::SemanticObject
+    SEMANTIC_TYPE = "http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#Address".freeze
 
 	# @return [String]
 	attr_accessor :street

@@ -26,8 +26,6 @@ require "virtual_assembly/semantizer"
 
 class DataFoodConsortium::Connector::CharacteristicDimension < DataFoodConsortium::Connector::SKOSConcept
 
-	
-
 
 
 

@@ -20,14 +20,13 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 
-
-
 require "datafoodconsortium/connector/agent"
+
+
 require "virtual_assembly/semantizer"
 
 class DataFoodConsortium::Connector::Person < DataFoodConsortium::Connector::Agent
-
-	
+    SEMANTIC_TYPE = "http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#Person".freeze
 
 	# @return [String]
 	attr_accessor :firstName

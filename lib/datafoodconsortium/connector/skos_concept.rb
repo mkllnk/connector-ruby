@@ -26,8 +26,8 @@
 require "virtual_assembly/semantizer"
 
 class DataFoodConsortium::Connector::SKOSConcept
-
-	include VirtualAssembly::Semantizer::SemanticObject
+    include VirtualAssembly::Semantizer::SemanticObject
+    SEMANTIC_TYPE = "http://www.w3.org/2004/02/skos/core#Concept".freeze
 
 	# @return [ISKOSConcept]
 	attr_accessor :broaders
