@@ -39,6 +39,9 @@ class DataFoodConsortium::Connector::SKOSInstance
 end
 
 class DataFoodConsortium::Connector::SKOSParser
+  def self.concepts
+    @concepts ||= {}
+  end
 
     def initialize()
         @results = DataFoodConsortium::Connector::SKOSInstance.new
@@ -87,7 +90,8 @@ class DataFoodConsortium::Connector::SKOSParser
     def createSKOSConcept(element)
         skosConcept = DataFoodConsortium::Connector::SKOSConcept.new(element.id)
         skosConcept.semanticType = element.type
-        return skosConcept
+        self.class.concepts[element.id] = skosConcept
+        skosConcept
     end
 
     def getValueWithoutPrefix(property)
