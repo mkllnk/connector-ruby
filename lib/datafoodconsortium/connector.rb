@@ -28,5 +28,11 @@ module DataFoodConsortium
 		require 'datafoodconsortium/connector/price.rb'
 		require 'datafoodconsortium/connector/sale_session.rb'
 		require 'datafoodconsortium/connector/skos_concept.rb'
+
+		def self.semantic_types
+		  constants.map(&method(:const_get)).select do |c|
+		    c.constants.include?(:SEMANTIC_TYPE)
+		  end
+		end
 	end
 end
