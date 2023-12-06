@@ -24,8 +24,9 @@
 require "virtual_assembly/semantizer"
 
 class DataFoodConsortium::Connector::SocialMedia
+    include VirtualAssembly::Semantizer::SemanticObject
 
-	include VirtualAssembly::Semantizer::SemanticObject
+    SEMANTIC_TYPE = "dfc-b:SocialMedia".freeze
 
 	# @return [String]
 	attr_accessor :name

@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+
+- Add Import method reading JSON and returning objects.
+- Add `SEMANTIC_TYPE` constant to every semantic class.
+
 ### Fixed
 
 - Fix random code changes of the generated code by sorting elements (e36a923).

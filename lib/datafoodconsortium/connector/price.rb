@@ -25,8 +25,9 @@
 require "virtual_assembly/semantizer"
 
 class DataFoodConsortium::Connector::Price
+    include VirtualAssembly::Semantizer::SemanticObject
 
-	include VirtualAssembly::Semantizer::SemanticObject
+    SEMANTIC_TYPE = "dfc-b:Price".freeze
 
 	# @return [Real]
 	attr_accessor :value

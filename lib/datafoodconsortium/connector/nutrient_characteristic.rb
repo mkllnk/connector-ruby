@@ -26,8 +26,7 @@ require "datafoodconsortium/connector/characteristic"
 require "virtual_assembly/semantizer"
 
 class DataFoodConsortium::Connector::NutrientCharacteristic < DataFoodConsortium::Connector::Characteristic
-
-	
+    SEMANTIC_TYPE = "dfc-b:NutrientCharacteristic".freeze
 
 	# @return [ISKOSConcept]
 	attr_accessor :nutrientDimension

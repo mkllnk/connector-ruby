@@ -26,8 +26,7 @@ require "datafoodconsortium/connector/characteristic"
 require "virtual_assembly/semantizer"
 
 class DataFoodConsortium::Connector::AllergenCharacteristic < DataFoodConsortium::Connector::Characteristic
-
-	
+    SEMANTIC_TYPE = "dfc-b:AllergenCharacteristic".freeze
 
 	# @return [ISKOSConcept]
 	attr_accessor :allergenDimension

@@ -27,8 +27,6 @@ require "virtual_assembly/semantizer"
 
 class DataFoodConsortium::Connector::Characteristic < DataFoodConsortium::Connector::QuantitativeValue
 
-	
-
 
 	# @param unit [ISKOSConcept]
 	# @param value [Real]

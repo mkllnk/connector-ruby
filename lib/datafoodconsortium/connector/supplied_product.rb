@@ -31,8 +31,7 @@ require "datafoodconsortium/connector/defined_product"
 require "virtual_assembly/semantizer"
 
 class DataFoodConsortium::Connector::SuppliedProduct < DataFoodConsortium::Connector::DefinedProduct
-
-	
+    SEMANTIC_TYPE = "dfc-b:SuppliedProduct".freeze
 
 	# @return [Real]
 	attr_accessor :totalTheoreticalStock

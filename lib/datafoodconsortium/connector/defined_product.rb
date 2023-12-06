@@ -30,8 +30,9 @@
 require "virtual_assembly/semantizer"
 
 class DataFoodConsortium::Connector::DefinedProduct
+    include VirtualAssembly::Semantizer::SemanticObject
 
-	include VirtualAssembly::Semantizer::SemanticObject
+    SEMANTIC_TYPE = "dfc-b:DefinedProduct".freeze
 
 	# @return [String]
 	attr_accessor :name

@@ -26,8 +26,7 @@ require "datafoodconsortium/connector/defined_product"
 require "virtual_assembly/semantizer"
 
 class DataFoodConsortium::Connector::TechnicalProduct < DataFoodConsortium::Connector::DefinedProduct
-
-	
+    SEMANTIC_TYPE = "dfc-b:TechnicalProduct".freeze
 
 
 	# @param semanticId [String]

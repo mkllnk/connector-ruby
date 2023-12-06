@@ -26,8 +26,7 @@ require "datafoodconsortium/connector/characteristic"
 require "virtual_assembly/semantizer"
 
 class DataFoodConsortium::Connector::PhysicalCharacteristic < DataFoodConsortium::Connector::Characteristic
-
-	
+    SEMANTIC_TYPE = "dfc-b:PhysicalCharacteristic".freeze
 
 	# @return [ISKOSConcept]
 	attr_accessor :physicalDimension

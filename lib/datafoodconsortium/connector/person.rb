@@ -27,8 +27,7 @@ require "datafoodconsortium/connector/agent"
 require "virtual_assembly/semantizer"
 
 class DataFoodConsortium::Connector::Person < DataFoodConsortium::Connector::Agent
-
-	
+    SEMANTIC_TYPE = "dfc-b:Person".freeze
 
 	# @return [String]
 	attr_accessor :firstName
