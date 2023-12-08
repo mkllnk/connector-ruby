@@ -2,13 +2,6 @@
 
 require_relative "skos_parser"
 
-require_relative "enterprise.rb"
-require_relative "person.rb"
-require_relative "quantitative_value.rb"
-require_relative "supplied_product.rb"
-require_relative "catalog_item.rb"
-require_relative "offer.rb"
-
 module DataFoodConsortium
   module Connector
     class Importer
