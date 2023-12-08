@@ -8,7 +8,7 @@ describe DataFoodConsortium::Connector::Importer do
   let(:catalog_item) do
     DataFoodConsortium::Connector::CatalogItem.new(
       "https://example.net/tomatoItem",
-      product:,
+      product: product,
     )
   end
   let(:product) do
